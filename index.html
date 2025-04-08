@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SociallyCurrent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<br>
+
+<!-- TOP HEADER: Logo and Profile -->
+<div class="header-top">
+    <a href="index.html">
+        <img src="SC%20Logo%201.png" alt="Logo" class="logo" />
+    </a>
+    <a href="profile.html">
+    <div class="profile">
+        <img src="Profile.png" alt="Profile Icon" />
+        <span>My Profile</span>
+    </div>
+    </a>
+</div>
+
+<br><br>
+
+<!-- NAVIGATION TABS -->
+<div class="navbar">
+    <a href="products.html" class="tab">Products</a>
+    <a href="about.html" class="tab">About</a>
+    <a href="pricing.html" class="tab">Pricing</a>
+</div>
+
+<!-- HERO SECTION -->
+
+<br><br><br>
+
+
+<div class="hero">
+    <h1><span id="typed-text"></span></h1>
+    <br><br>
+    <p>
+        Control your influence like never before with SociallyCurrent.
+        We use Predictive AI to revolutionize your matches and content creation,
+        so you don’t have to. Simply sign up, upload your profiles, and we’ll handle the rest.
+    </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<script>
+    const text = "Connect. Influence. Monetize.";
+    const typedText = document.getElementById("typed-text");
+
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            typedText.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 75); // Typing speed (ms)
+        } else {
+            // Wait 2 seconds before removing the blinking cursor
+            setTimeout(() => {
+                typedText.classList.add("done");
+            }, 2000); // 2000ms = 2 seconds
+        }
+    }
+
+    window.addEventListener("DOMContentLoaded", type);
+</script>
+
+
+
+</body>
+</html>
