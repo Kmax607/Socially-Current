@@ -36,13 +36,13 @@
 
 <!-- HERO SECTION -->
 
-<br><br><br>
+<br><br><br><br><br>
 
 
 <div class="hero">
     <h1><span id="typed-text"></span></h1>
     <br><br>
-    <p>
+    <p class="fade-in">
         Control your influence like never before with SociallyCurrent.
         We use Predictive AI to revolutionize your matches and content creation,
         so you don’t have to. Simply sign up, upload your profiles, and we’ll handle the rest.
@@ -51,25 +51,40 @@
 </div>
 
 <script>
+    // Typing animation
     const text = "Connect. Influence. Monetize.";
     const typedText = document.getElementById("typed-text");
-
     let index = 0;
 
     function type() {
         if (index < text.length) {
             typedText.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 75); // Typing speed (ms)
+            setTimeout(type, 75);
         } else {
-            // Wait 2 seconds before removing the blinking cursor
             setTimeout(() => {
                 typedText.classList.add("done");
-            }, 2000); // 2000ms = 2 seconds
+            }, 2000);
         }
     }
 
-    window.addEventListener("DOMContentLoaded", type);
+    window.addEventListener("DOMContentLoaded", () => {
+        type();
+
+        // Fade-in on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        faders.forEach(fader => observer.observe(fader));
+    });
 </script>
 
 

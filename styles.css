@@ -141,4 +141,77 @@ a {
     50% { opacity: 0; }
 }
 
+/* PRICING CARDS */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--light);
+    border-radius: 12px;
+    padding: 24px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.card button {
+    background-color: var(--accent);
+    color: var(--dark);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #6cd6da;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
