@@ -39,23 +39,35 @@
 <br><br>
 
 
-<div class="hero">
+<!--<div class="hero">
   <h1>Options</h1>
   <p>
 
   </p>
   <br><br>
+</div>-->
+
+<div class="pricing-toggle">
+  <span class="toggle-label">Monthly</span>
+  <label class="switch">
+    <input type="checkbox" id="billing-toggle">
+    <span class="slider"></span>
+  </label>
+  <span class="toggle-label">Yearly</span>
 </div>
+
 
 <div class="pricing-cards">
   <!-- Starter Plan -->
   <div class="card">
-    <h2>Starter</h2>
-    <p class="price">$9.99/month</p>
+    <h2>Basic</h2>
+    <p class="price" id="basic-price">Free</p>
     <ul>
-      <li>Basic analytics</li>
-      <li>1 profile integration</li>
-      <li>Email support</li>
+      <li>3 Campaign Matches Per Week</li>
+      <li>Basic Analytics Dashboard</li>
+      <li>Manual Data Import</li>
+      <li>Email Support</li>
+      <li>Recommended for Business</li>
     </ul>
     <button>Select</button>
   </div>
@@ -63,23 +75,27 @@
   <!-- Pro Plan -->
   <div class="card">
     <h2>Pro</h2>
-    <p class="price">$19.99/month</p>
+    <p class="price" id="pro-price">$17.99/month</p>
     <ul>
-      <li>Advanced analytics</li>
-      <li>5 profile integrations</li>
-      <li>Priority email support</li>
+      <li>10 Campaign Matches Per Week</li>
+      <li>Basic Analytics Dashboard</li>
+      <li>Priority Email Support</li>
+      <li>AI Contract Assistance</li>
+      <br>
     </ul>
     <button>Select</button>
   </div>
 
   <!-- Premium Plan -->
   <div class="card">
-    <h2>Premium</h2>
-    <p class="price">$24.99/month</p>
+    <h2>Pro+</h2>
+    <p class="price" id="proplus-price">$49.99/month</p>
     <ul>
-      <li>Full analytics suite</li>
-      <li>Unlimited profiles</li>
-      <li>24/7 priority support</li>
+      <li>Unlimited Matches</li>
+      <li>Full Analytics Dashboard</li>
+      <li>AI Contract Assistance</li>
+      <li>Messaging Capabilities</li>
+      <li>Dedicated Customer Service</li>
     </ul>
     <button>Select</button>
   </div>
@@ -89,4 +105,30 @@
 
 
 </body>
+
+<script>
+  const toggle = document.getElementById('billing-toggle');
+
+  const prices = {
+    monthly: {
+      basic: 'Free',
+      pro: '$17.99/month',
+      proplus: '$49.99/month'
+    },
+    yearly: {
+      basic: 'Free',
+      pro: '$179.99/year',
+      proplus: '$499.99/year'
+    }
+  };
+
+  toggle.addEventListener('change', () => {
+    const billingType = toggle.checked ? 'yearly' : 'monthly';
+
+    document.getElementById('basic-price').textContent = prices[billingType].basic;
+    document.getElementById('pro-price').textContent = prices[billingType].pro;
+    document.getElementById('proplus-price').textContent = prices[billingType].proplus;
+  });
+</script>
+
 </html>
