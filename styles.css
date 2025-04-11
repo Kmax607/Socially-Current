@@ -418,4 +418,14 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
+.footer-contact a {
+    color: var(--white); /* or var(--accent) if you'd prefer */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--accent);
+}
+
 
