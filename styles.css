@@ -23,11 +23,11 @@ body {
 }
 
 .logo {
-    height: 110px;
+    height: 170px;
 }
 
 .logo:hover {
-    content: url("Logo Light.png");
+    content: url("Logo Light 4.png");
 }
 
 .profile {
