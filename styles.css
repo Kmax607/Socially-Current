@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --accent: #82e5e8;
-    --dark: #252e2d;
+    --accent: #00b7fd;
+    --dark: #24272b;
     --white: #ffffff;
     --light: #4a5a59
 }
 
 body {
     margin: 0;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to bottom, var(--white), #e6fafa, var(--accent), var(--accent));
     color: var(--dark);
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .logo:hover {
-    content: url("Alt SC Logo.png");
+    content: url("Logo Light.png");
 }
 
 .profile {
@@ -58,7 +58,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--light);
+    background-color: var(--dark);
     border-radius: 12px;
     margin: 20px auto;
     padding: 8px 16px;
@@ -200,7 +200,7 @@ a {
 }
 
 .card button:hover {
-    background-color: #6cd6da;
+    background-color: #62d1ff;);
 }
 
 .fade-in {
@@ -410,7 +410,7 @@ input:checked + .slider:before {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 .fade-in.visible {
@@ -427,5 +427,53 @@ input:checked + .slider:before {
 .footer-contact a:hover {
     color: var(--accent);
 }
+
+.product-grid {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.product-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    padding: 24px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.8s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: var(--dark);
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Left/Right alignment */
+.product-card.left {
+    align-self: flex-start;
+}
+
+.product-card.right {
+    align-self: flex-end;
+}
+
 
 
