@@ -20,14 +20,17 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px 8px 24px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
+
 .logo {
-    height: 170px;
+    height: 115px;
 }
 
 .logo:hover {
-    content: url("Logo Light 4.png");
+    content: url("Logo Light 5.png");
 }
 
 .profile {
@@ -37,11 +40,12 @@ body {
     font-size: 16px;
     color: var(--dark);
     user-select: none;
+    margin-right: 36px
 }
 
 .profile img {
-    width: 118px;
-    height: 118px;
+    width: 77px;
+    height: 77px;
 }
 
 .profile:hover span {
@@ -50,8 +54,8 @@ body {
 
 .profile:hover img {
     content: url("Profile Highlight.png");
-    width: 118px;
-    height: 118px;
+    width: 77px;
+    height: 77px;
 }
 
 /* NAVIGATION BAR */
@@ -552,3 +556,26 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 8px 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.wordmark {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.wordmark img {
+    max-height: 500px;
+    width: auto;
+    display: block;
+}
