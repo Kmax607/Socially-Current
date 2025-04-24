@@ -30,7 +30,7 @@ body {
 }
 
 .logo:hover {
-    content: url("Logo Light 5.png");
+    content: url("Logo Light 4.png");
 }
 
 .profile {
@@ -417,6 +417,79 @@ input:checked + .slider:before {
     font-size: 14px;
     margin-bottom: 16px;
     color: var(--dark);
+}
+
+/* White background for Purpose */
+.light-bg {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    padding: 40px 24px;
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* Dark side-by-side section */
+.about-duo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin: 60px auto;
+    color: var(--white);
+    background-color: var(--dark);
+    max-width: 1100px;
+}
+
+.mission-vision-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 0 20px;
+    max-width: 1100px;
+}
+
+.mv-card {
+    background-color: var(--dark);
+    color: var(--white);
+    flex: 1 1 400px;
+    max-width: 500px;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.mv-card h2 {
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.mv-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.half-section {
+    flex: 1 1 400px;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.half-section h2 {
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.half-section p {
+    line-height: 1.6;
+    font-size: 15px;
 }
 
 /* Reuse existing fade-in animations */
