@@ -14,29 +14,28 @@
 
 <!-- TOP HEADER: Logo and Profile -->
 <div class="header-top">
-    <a href="index.html">
-        <img src="Logo Dark 4.png" alt="Logo" class="logo" />
-    </a>
 
     <!-- Wordmark image centered -->
     <div class="wordmark">
         <img src="Word Mark.png" alt="SociallyCurrent Wordmark" />
     </div>
-
-    <a href="profile.html">
-        <div class="profile">
-            <img src="Profile Highlight.png" alt="Profile Icon" />
-            <span>My Profile</span>
-        </div>
-    </a>
+    <p>
+        <br>
+    </p>
 </div>
 
+<div class="hero">
+    <p class="fade-in">
+        I am a...
+    </p>
+    <br>
+</div>
 
 <!-- NAVIGATION TABS -->
+
 <div class="navbar">
-    <a href="products.html" class="tab">Products</a>
-    <a href="about.html" class="tab">About</a>
-    <a href="pricing.html" class="tab">Pricing</a>
+    <a href="landing_page.html" class="tab">Influencer</a>
+    <a href="landing_page_b.html" class="tab active">Brand</a>
 </div>
 
 <!-- HERO SECTION -->
@@ -52,12 +51,54 @@
         We use Predictive AI to revolutionize your matches and content creation,
         so you don’t have to. Simply sign up, upload your profiles, and we’ll handle the rest.
     </p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
 </div>
+
+
+<section class="about-grid fade-in">
+    <div class="about-image">
+        <img src="SC%20Landing%20Page%20Brand.png" alt="" />
+    </div>
+    <div class="about-text">
+        <h2>An Algorithm Catered to Your Needs</h2>
+        <p>We’re a team of marketers, entrepreneurs, and problem-solvers who have seen the frustrations in influencer marketing—from both sides. We understand how hard it is for brands to find the right partners, and for influencers to find aligned opportunities. We created SociallyCurrent to solve that.</p>
+    </div>
+</section>
+
+<!-- CONTACT SIGNUP SECTION -->
+<section class="contact-form-section">
+    <h2>Stay in the Loop</h2>
+    <p>Sign up to receive updates and opportunities.</p>
+    <form class="contact-form">
+        <div class="form-row">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="form-row">
+        <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-row">
+        <input type="text" name="company" placeholder="Company/Organization Name" required>
+        </div>
+        <div class="form-row">
+        <select name="referralSource" required>
+            <option value="" disabled selected>How did you hear about us?</option>
+            <option value="social-media">Social Media</option>
+            <option value="friend">Friend or Colleague</option>
+            <option value="event">Event or Conference</option>
+            <option value="search">Search Engine</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    <br><br>
+</section>
 
 <script>
     // Typing animation
-    const text = "Connect. Influence. Monetize.";
+    const text = "The A.I. that works best for you.";
     const typedText = document.getElementById("typed-text");
     let index = 0;
 
@@ -65,7 +106,7 @@
         if (index < text.length) {
             typedText.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 75);
+            setTimeout(type, 65);
         } else {
             setTimeout(() => {
                 typedText.classList.add("done");

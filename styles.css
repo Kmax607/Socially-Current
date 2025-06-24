@@ -53,7 +53,7 @@ body {
 }
 
 .profile:hover img {
-    content: url("Profile Highlight.png");
+    content: url("Profile Hover New.png");
     width: 77px;
     height: 77px;
 }
@@ -653,4 +653,233 @@ input:checked + .slider:before {
     display: block;
     user-select: none;
     pointer-events: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
+
+
+.landing-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f7fdfd, #dff6f9);
+    font-family: 'Helvetica', sans-serif;
+}
+
+.landing-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark, #111);
+}
+
+.selector-label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.role-toggle {
+    display: inline-flex;
+    border-radius: 30px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.toggle-btn {
+    padding: 12px 28px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.toggle-btn.active {
+    background-color: #7df0f2;
+    color: #000;
+    border-radius: 30px;
+}
+
+.description {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form-section {
+    background-color: #f9f9f9;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-form-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.contact-form input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+}
+
+/*SCREEN SIZE ADAPTABILITY*/
+
+/* TABLETS (under 1024px) */
+@media screen and (max-width: 1024px) {
+    .header-top {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .wordmark {
+        position: static;
+        transform: none;
+        margin: 16px 0;
+    }
+
+    .profile {
+        margin-right: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mv-card {
+        max-width: 100%;
+    }
+
+    .product-card.left,
+    .product-card.right {
+        align-self: center;
+    }
+
+    .mission-vision-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form .form-row {
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form select {
+        font-size: 15px;
+    }
+}
+
+/* PHONES (under 600px) */
+@media screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p,
+    .product-section p,
+    .about-centered p {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .tab {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .profile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mv-card,
+    .half-section,
+    .about-section,
+    .light-bg,
+    .product-section {
+        padding: 20px;
+    }
+
+    .contact-form-section {
+        padding: 30px 16px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
