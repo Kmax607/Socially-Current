@@ -19,9 +19,6 @@
     <div class="wordmark">
         <img src="Word Mark.png" alt="SociallyCurrent Wordmark" />
     </div>
-    <p>
-        <br>
-    </p>
 </div>
 
 <div class="hero">
@@ -33,25 +30,23 @@
 
 <!-- NAVIGATION TABS -->
 
-<div class="navbar">
+<div class="navbar2">
     <a href="landing_page.html" class="tab">Influencer</a>
     <a href="landing_page_b.html" class="tab active">Brand</a>
 </div>
 
 <!-- HERO SECTION -->
 
-<br><br>
-
 
 <div class="hero">
-    <h1><span id="typed-text"></span></h1>
-    <br><br><br><br><br>
+    <h1><span id="typed-text" class="typed-text-small"></span></h1>
+    <br><br><br>
     <p class="fade-in">
         Control your influence like never before with SociallyCurrent.
         We use Predictive AI to revolutionize your matches and content creation,
         so you don’t have to. Simply sign up, upload your profiles, and we’ll handle the rest.
     </p>
-    <br><br><br><br><br>
+    <br><br>
 </div>
 
 
@@ -67,7 +62,7 @@
 
 <!-- CONTACT SIGNUP SECTION -->
 <section class="contact-form-section">
-    <h2>Stay in the Loop</h2>
+    <h2>Be an Early Adopter</h2>
     <p>Sign up to receive updates and opportunities.</p>
     <form class="contact-form">
         <div class="form-row">
@@ -98,7 +93,7 @@
 
 <script>
     // Typing animation
-    const text = "The A.I. that works best for you.";
+    const text = "The AI that works best for you.";
     const typedText = document.getElementById("typed-text");
     let index = 0;
 
@@ -106,7 +101,7 @@
         if (index < text.length) {
             typedText.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 65);
+            setTimeout(type, 69);
         } else {
             setTimeout(() => {
                 typedText.classList.add("done");

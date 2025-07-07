@@ -70,6 +70,19 @@ body {
     width: 100%;
 }
 
+.navbar2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--dark);
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 8px 4px;
+    max-width: 60%;
+    width: 67%;
+    flex-direction: row;
+    gap: 3px;
+}
+
 .tab {
     flex: 1;
     text-align: center;
@@ -776,6 +789,11 @@ input:checked + .slider:before {
     border-radius: 6px;
     background-color: white;
     color: #333;
+}
+
+.typed-text-small {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 /*SCREEN SIZE ADAPTABILITY*/
