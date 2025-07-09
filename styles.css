@@ -796,6 +796,40 @@ input:checked + .slider:before {
     font-weight: 600;
 }
 
+.contact-form-section,
+.contact-form {
+    background: transparent;
+    box-shadow: none;
+}
+
+.oval-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.oval-button {
+    display: inline-block;
+    text-align: center;
+    width: 140px; /* Fixed width for consistency */
+    padding: 10px 0;
+    border-radius: 999px;
+    border: 2px solid #8ee2e2;
+    background-color: #f8ffff;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.oval-button.selected,
+.oval-button:hover {
+    background-color: #8ee2e2;
+    color: #000;
+}
+
 /*SCREEN SIZE ADAPTABILITY*/
 
 /* TABLETS (under 1024px) */

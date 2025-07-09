@@ -33,17 +33,50 @@
 
 <!-- NAVIGATION TABS -->
 
-<div class="navbar2">
-    <a href="landing_page.html" class="tab">Influencer</a>
-    <a href="landing_page_b.html" class="tab active">Brand</a>
-</div>
+<nav class="oval-nav">
+    <a href="landing_page.html" class="oval-button">Influencer</a>
+    <a href="landing_page_b.html" class="oval-button selected">Brand</a>
+</nav>
+
 
 <!-- HERO SECTION -->
 
 
 <div class="hero">
     <h1><span id="typed-text" class="typed-text-small"></span></h1>
-    <br><br><br>
+    <br>
+
+    <!-- CONTACT SIGNUP SECTION -->
+    <section class="contact-form-section">
+        <h2>Be an Early Adopter</h2>
+        <p>Sign up to receive updates and opportunities.</p>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-row">
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="company" placeholder="Company/Organization Name" required>
+            </div>
+            <div class="form-row">
+                <select name="referralSource" required>
+                    <option value="" disabled selected>How did you hear about us?</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend">Friend or Colleague</option>
+                    <option value="event">Event or Conference</option>
+                    <option value="search">Search Engine</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <br><br>
+    </section>
+
     <p class="fade-in">
         Control your influence like never before with SociallyCurrent.
         We use Predictive AI to revolutionize your matches and content creation,
@@ -63,36 +96,6 @@
     </div>
 </section>
 
-<!-- CONTACT SIGNUP SECTION -->
-<section class="contact-form-section">
-    <h2>Be an Early Adopter</h2>
-    <p>Sign up to receive updates and opportunities.</p>
-    <form class="contact-form">
-        <div class="form-row">
-            <input type="text" name="firstName" placeholder="First Name" required>
-            <input type="text" name="lastName" placeholder="Last Name" required>
-        </div>
-        <div class="form-row">
-        <input type="email" name="email" placeholder="Email Address" required>
-        </div>
-        <div class="form-row">
-        <input type="text" name="company" placeholder="Company/Organization Name" required>
-        </div>
-        <div class="form-row">
-        <select name="referralSource" required>
-            <option value="" disabled selected>How did you hear about us?</option>
-            <option value="social-media">Social Media</option>
-            <option value="friend">Friend or Colleague</option>
-            <option value="event">Event or Conference</option>
-            <option value="search">Search Engine</option>
-            <option value="other">Other</option>
-        </select>
-        </div>
-
-        <button type="submit">Submit</button>
-    </form>
-    <br><br>
-</section>
 
 <script>
     // Typing animation
