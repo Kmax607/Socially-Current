@@ -661,7 +661,9 @@ input:checked + .slider:before {
 }
 
 .wordmark img {
-    max-height: 500px;
+    max-height: 200px; /* Adjusted for better mobile behavior */
+    max-width: 90vw;   /* Makes sure it doesn’t overflow screen width */
+    height: auto;
     width: auto;
     display: block;
     user-select: none;
@@ -932,6 +934,13 @@ input:checked + .slider:before {
     .contact-form button {
         font-size: 15px;
         padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .wordmark img {
+        max-height: 140px;
     }
 }
 
