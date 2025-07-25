@@ -20,7 +20,7 @@
     <br>
   </p>
   <div class="wordmark">
-    <img src="Word Mark.png" alt="SociallyCurrent Wordmark" />
+    <img src="slim wordmark.png" alt="SociallyCurrent Wordmark" />
   </div>
 </div>
 
@@ -49,7 +49,14 @@
   <section class="contact-form-section">
     <h2>Be an Early Adopter</h2>
     <p>Sign up to receive updates and opportunities.</p>
-    <form class="contact-form">
+    <form action="https://formsubmit.co/max.kraus607@gmail.com" method="POST" class="contact-form">
+      <!-- Optional: disable captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Optional: redirect after submission -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+      <!-- Hidden field to tag the type -->
+      <input type="hidden" name="type" value="influencer" />
+
       <div class="form-row">
         <input type="text" name="firstName" placeholder="First Name" required>
         <input type="text" name="lastName" placeholder="Last Name" required>
@@ -59,7 +66,7 @@
       </div>
       <div class="form-row">
         <input type="text" name="handle" placeholder="Primary Social Media Handle" required>
-        <input type="text" name="handle" placeholder="Primary Social Media Platform" required>
+        <input type="text" name="platform" placeholder="Primary Social Media Platform" required>
       </div>
       <div class="form-row">
         <select name="referralSource" required>
@@ -74,6 +81,7 @@
 
       <button type="submit">Submit</button>
     </form>
+
     <br><br>
   </section>
 
