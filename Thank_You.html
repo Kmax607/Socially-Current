@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SociallyCurrent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<br>
+
+<!-- TOP HEADER: Logo and Profile -->
+<div class="header-top">
+
+    <!-- Wordmark image centered -->
+    <p>
+        <br>
+    </p>
+    <div class="wordmark">
+        <img src="slim wordmark.png" alt="SociallyCurrent Wordmark" />
+    </div>
+</div>
+
+
+
+<!-- HERO SECTION -->
+
+
+<div class="hero">
+
+    <br><br><br>
+
+    <p class="fade-in">
+        <h2>You're On The List</h2>
+        <br>
+        We appreciate your interest in SociallyCurrent. You’ll be among the first to hear about new opportunities and updates tailored just for you.
+    </p>
+    <br><br><br><br><br><br><br><br>
+</div>
+
+
+
+
+<script>
+    // Typing animation
+    const text = "The AI that works best for you.";
+    const typedText = document.getElementById("typed-text");
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            typedText.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 69);
+        } else {
+            setTimeout(() => {
+                typedText.classList.add("done");
+            }, 2000);
+        }
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+        type();
+
+        // Fade-in on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        faders.forEach(fader => observer.observe(fader));
+    });
+</script>
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="Logo%20Multicolor.png" alt="SociallyCurrent Logo" />
+            <p>Empowering creators through <br>AI-driven influence.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:info@sociallycurrent.ai">info@sociallycurrent.ai</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 SociallyCurrent.ai. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
