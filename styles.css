@@ -62,47 +62,30 @@ body {
 /* NAVIGATION BAR */
 .navbar {
     display: flex;
-    flex-direction: row; /* Always horizontal */
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-evenly; /* even spacing */
+    align-items: center;
     background-color: var(--dark);
     border-radius: 12px;
     margin: 20px auto;
     padding: 8px 16px;
     max-width: 90%;
     width: 100%;
-    flex-wrap: nowrap; /* Prevent wrapping */
-}
-
-.navbar2 {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--dark);
-    border-radius: 12px;
-    margin: 20px auto;
-    padding: 8px 4px;
-    max-width: 60%;
-    width: 67%;
-    flex-direction: row;
-    gap: 3px;
+    flex-wrap: nowrap; /* no wrapping */
 }
 
 .tab {
-    flex: 1;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 12px;
-    background-color: transparent;
-    color: var(--white);
+    color: white;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    margin: 0 4px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    flex: 1; /* equal space for each link */
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .tab:hover {
-    background-color: var(--white);
-    color: var(--dark);
-    font-weight: 500;
+    background-color: var(--accent);
 }
 
 .tab.active {
