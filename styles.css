@@ -925,8 +925,8 @@ input:checked + .slider:before {
     }
 
     .tab {
-        padding: 8px 10px;
-        font-size: 14px;
+        padding: 4px 5px;
+        font-size: 7px;
     }
 
     .mv-card,
