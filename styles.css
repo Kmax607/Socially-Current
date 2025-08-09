@@ -916,7 +916,7 @@ input:checked + .slider:before {
     }
 
     .logo {
-        height: 40px; /* smaller logo */
+        height: 40px;
     }
 
     .profile img {
