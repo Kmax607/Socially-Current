@@ -15,29 +15,26 @@ body {
 }
 
 /* HEADER TOP */
-/* HEADER TOP */
 .header-top {
     display: flex;
-    justify-content: space-between; /* Spread left, middle, right */
+    flex-direction: row !important;
+    justify-content: space-between;
     align-items: center;
-    padding: 8px 16px; /* Slightly smaller padding for more space */
-    flex-wrap: nowrap;
+    padding: 16px 24px 8px 24px;
+    flex-wrap: nowrap; /* Force items to stay in one line */
     position: relative;
-    gap: 12px; /* Space between elements */
-    box-sizing: border-box; /* Prevent overflow from padding */
+    gap: 20px; /* optional spacing */
 }
+
 
 .logo {
     height: 115px;
-    max-width: 100%;
-    flex-shrink: 1; /* Allow to shrink if needed */
 }
 
 .logo:hover {
     content: url("Logo Light 4.png");
 }
 
-/* Profile container */
 .profile {
     display: flex;
     flex-direction: column;
@@ -45,11 +42,20 @@ body {
     font-size: 16px;
     color: var(--dark);
     user-select: none;
-    margin-right: 0; /* Removed fixed margin to avoid overflow */
-    flex-shrink: 1; /* Allow shrinkage */
+    margin-right: 36px
 }
 
 .profile img {
+    width: 77px;
+    height: 77px;
+}
+
+.profile:hover span {
+    color: var(--accent); /* Icy Blue */
+}
+
+.profile:hover img {
+    content: url("Profile Hover New.png");
     width: 77px;
     height: 77px;
 }
