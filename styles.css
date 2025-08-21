@@ -95,6 +95,10 @@ body {
         margin-right: 0; /* Remove extra margin */
     }
 
+    .profile:hover img {
+        height: 70px;
+    }
+
 }
 
 /* NAVIGATION BAR */
